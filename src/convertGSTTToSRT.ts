@@ -10,7 +10,7 @@ export function convertGSTTToSRT(string: string) {
                 seconds = input.seconds || '0';
                 this.nanos = input.substring(input.length -3, 3);
             } else {
-                seconds = input.substring(0, input.length );
+                seconds = input.substring(0, input.length -1);
                 this.nanos = input.substring(input.length -3, 3); // servide doesn't return nanoseconds on v1
             }
             this.seconds = +seconds;
