@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LuisMayo/GoogleSTTtoSRTConverter"
+    "url": "git+https://github.com/steph165/GoogleSTTtoSRTConverter"
   },
   "keywords": [],
   "author": "",
@@ -18,9 +18,9 @@
   ],
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/LuisMayo/GoogleSTTtoSRTConverter/issues"
+    "url": "https://github.com/steph165/GoogleSTTtoSRTConverter/issues"
   },
-  "homepage": "https://github.com/LuisMayo/GoogleSTTtoSRTConverter#readme",
+  "homepage": "https://github.com/steph165/GoogleSTTtoSRTConverter#readme",
   "devDependencies": {
     "typescript": "^3.6.4"
   }
