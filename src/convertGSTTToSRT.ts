@@ -23,7 +23,7 @@ export function convertGSTTToSRT(string: string) {
             return String(this.hours).padStart(2, '0') + ':'
             + String(this.minutes).padStart(2, '0') + ':'
             + String(this.seconds).padStart(2, '0') + ','
-            + this.nanos.substr(0,3);
+            + this.nanos.substr(0,2);
         }
 
     }
