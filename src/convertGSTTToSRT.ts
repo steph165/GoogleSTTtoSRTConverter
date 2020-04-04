@@ -8,10 +8,10 @@ export function convertGSTTToSRT(string: string) {
             let seconds, nanos: string;
             if (determineIfv2(input)) {
                 seconds = input.seconds || '0';
-                this.nanos = input.substring(input.length -3, input.length -1);
+                this.nanos = input.substring(input.length -3, 3);
             } else {
                 seconds = input.substring(0, input.length - 1);
-                this.nanos = input.substring(input.length -3, input.length -1); // servide doesn't return nanoseconds on v1
+                this.nanos = input.substring(input.length -3, 3); // servide doesn't return nanoseconds on v1
             }
             this.seconds = +seconds;
             this.hours = Math.floor(this.seconds / 3600);
@@ -23,7 +23,7 @@ export function convertGSTTToSRT(string: string) {
             return String(this.hours).padStart(2, '0') + ':'
             + String(this.minutes).padStart(2, '0') + ':'
             + String(this.seconds).padStart(2, '0') + ','
-            + this.nanos.substr(0,2);
+            + this.nanos.substr(0,3);
         }
 
     }
